@@ -1,0 +1,211 @@
+models:
+  gemma-3-27b-it:
+    description: "Instruction-tuned Gemini model for summarizing job postings."
+    tasks:
+      summarization:
+        description: "Summarize job descriptions for semantic search."
+        prompts:
+          v1:
+            template: |
+              Summarize this job description for semantic search.
+              Keep: key skills/technologies, responsibilities, domain/industry, seniority.
+              Drop: marketing/perks/fluff and any job title.
+              Return concise sentences.
+
+              Job Description:
+              {description}
+            temperature: 0.3
+            max_output_tokens: 128
+
+          v2:
+            template: |
+              Summarize the following job description into key information only.
+
+              Include:
+              - Key skills and technologies required
+              - Main responsibilities
+              - Industry or domain
+              - Seniority level 
+
+              Exclude:
+              - Job titles
+              - Marketing language, perks, or company benefits
+              - Unnecessary details
+              - Structural labels or formatting
+              - Uncertain language like "implied" or "appears to be"
+              - Any inferred or assumed information not explicitly stated
+
+              Provide only factual statements in natural, flowing sentences. If fields in Include are not explicitly mentioned, do not include it.
+
+              Job Description:
+              {description}
+            temperature: 0.3
+            max_output_tokens: 128
+
+          v3: ## input title + one shot example
+            template: |
+              Summarize the following job description into key information only.
+
+              Include:
+              - Job titles
+              - Key skills and technologies required
+              - Main responsibilities
+              - Industry or domain
+              - Seniority level 
+
+              Exclude:
+              - Repeating the job title explicitly
+              - Marketing language, perks, or company benefits
+              - Unnecessary details
+              - Structural labels or formatting
+              - Uncertain language like "implied" or "appears to be"
+              - Any inferred or assumed information not explicitly stated
+
+              Provide only factual statements in natural, flowing sentences. If fields in Include are not explicitly mentioned, do not include it.
+
+              Job Description:
+              {description}
+
+              Title:
+              {title}
+
+              Example:
+
+              Inputs:
+              Job Description: The Senior Data Engineer will design and maintain scalable data pipelines using Python, SQL, and Apache Spark. You'll work with our amazing team in a fun, collaborative environment with free snacks! Responsibilities include ETL development, data warehouse optimization, and mentoring junior engineers. We offer competitive salary and unlimited PTO!
+              Title: Senior Data Engineer
+
+              Output:
+              Senior Data Engineer position. Designs and maintains scalable data pipelines using Python, SQL, and Apache Spark for ETL development and data warehouse optimization. Mentors junior engineers. Senior-level position in data engineering domain.
+            temperature: 0.1
+            max_output_tokens: 128
+
+          v4: ## anti-hallucination version for short descriptions
+            template: |
+              Summarize the following job description into key information only.
+
+              CRITICAL RULES:
+              - Only extract information explicitly stated in the job description
+              - If the description is very short or lacks details, return the original description as-is
+              - DO NOT infer, assume, or generate information not present in the description
+              - DO NOT use knowledge about typical job responsibilities
+
+              Include (only if explicitly mentioned):
+              - Key skills and technologies required
+              - Main responsibilities
+              - Industry or domain
+              - Seniority level (extracted from title if provided)
+
+              Exclude:
+              - Marketing language, perks, or company benefits
+              - Unnecessary details
+              - Structural labels or formatting
+              - Uncertain language like "implied" or "appears to be"
+              - Any inferred or assumed information not explicitly stated
+
+              Provide only factual statements in natural, flowing sentences. If the description is too short (less than 50 characters) or only contains a job title, return the original description without modification.
+
+              Job Description:
+              {description}
+
+              Title:
+              {title}
+
+              Example:
+
+              Inputs:
+              Job Description: The Senior Data Engineer will design and maintain scalable data pipelines using Python, SQL, and Apache Spark. You'll work with our amazing team in a fun, collaborative environment with free snacks! Responsibilities include ETL development, data warehouse optimization, and mentoring junior engineers. We offer competitive salary and unlimited PTO!
+              Title: Senior Data Engineer
+
+              Output:
+              Senior Data Engineer position. Designs and maintains scalable data pipelines using Python, SQL, and Apache Spark for ETL development and data warehouse optimization. Mentors junior engineers. Senior-level position in data engineering domain.
+            temperature: 0.0
+            max_output_tokens: 128
+
+
+      ground_truth_labeling_multilabel:
+        description: "Label all categories for a job posting in a single API call. Returns JSON with 0/1 per category."
+        prompts:
+            template: |
+              You are a strict multi-label job classifier. For each category, output 0 or 1. No explanation.
+
+              GOAL:
+              Decide if this job CLEARLY belongs to each category based on the overall meaning of the title and description.
+
+              CATEGORIES:
+              - internship: Any internship, co-op, or apprenticeship role.
+              - entry_level: The role itself targets candidates with 0-1 years of experience (e.g. "new grad welcome", "no experience required"). Output 0 if the job requires 2+ years of experience OR if the role involves supervising/mentoring others.
+              - data_analytics: Roles primarily focused on analyzing data, BI reporting, dashboards, experimentation, or data science analysis as the main day-to-day work. Excludes strategy/consulting/product roles where data is only an input to higher-level business or product decisions.
+              - software_engineering: Software engineer, developer, or similar engineering roles, including data engineer, ML engineer, or platform engineer roles that primarily build data/ML systems and tooling.
+              - finance_accounting: Finance, accounting, financial planning & analysis, treasury, or investment analysis roles where the primary focus is financial modeling, budgeting, forecasting, or accounting, rather than broad business strategy or consulting.
+              - marketing: Marketing, growth, brand, campaign, performance marketing, or go-to-market execution roles where the primary focus is planning and running marketing activities, rather than broad business or product strategy.
+              - strategy_product_consulting: Generalist management consulting, internal corporate/business strategy, business operations, corporate development/M&A strategy, and product management/product strategy roles where the primary focus is defining strategy, roadmaps, recommendations, and advising leaders across functions (typical MBA-target roles).
+
+              RULES:
+              - If internship = 1, entry_level MUST be 0.
+              - entry_level = 1 if the description explicitly states 0-1 years of experience, "new grad", "recent graduate", "no experience required", or uses language like "basic", "familiarity with", "exposure to" throughout requirements.
+              - entry_level = 0 if the description requires 2+ years of experience OR the role involves supervising/mentoring others.
+              - The word "junior" in a description (e.g. "mentor junior engineers") does NOT make the role entry_level. Only label entry_level = 1 if the job is recruiting inexperienced candidates.
+              - For data_analytics = 1, the core day-to-day work must be producing analyses, dashboards, reports, experiments, or data science insights for stakeholders (e.g., "analyze", "report", "visualize", "build dashboards", "run experiments").
+              - If the role mainly designs, builds, or maintains data infrastructure, ETL/ELT pipelines, data platforms, ML systems, or production services (e.g., "build pipelines", "own data platform", "deploy models", "maintain services"), set software_engineering = 1 and data_analytics = 0, even if the title contains words like "data" or "analytics".
+              - Strategy / consulting / product roles that primarily focus on business, corporate, financial, or product strategy (e.g., "Senior Strategy Manager", "Corporate Strategy Manager", "Strategy Consultant", "Product Manager", "Product Strategy Manager", "Business Operations Manager") should NOT be labeled data_analytics, even if they mention using data or analytics to inform decisions.
+              - For generalist consulting / strategy / product roles where the main work is defining strategy, roadmaps, and recommendations across functions, set strategy_product_consulting = 1 and set all other domain categories (data_analytics, software_engineering, finance_accounting, marketing) to 0, unless the role is clearly a pure finance or pure marketing role.
+              - For finance-specific roles where the day-to-day work is financial modeling, budgeting, forecasting, accounting, treasury, or investment analysis, set finance_accounting = 1 and strategy_product_consulting = 0 (even if the title includes the word "strategy").
+              - For marketing-specific roles where the day-to-day work is running campaigns, performance marketing, brand management, CRM, or GTM execution, set marketing = 1 and strategy_product_consulting = 0 (even if the title includes the word "strategy").
+              - When both analytics and strategy are present, label ONLY the category that reflects the primary day-to-day work. Do not set both data_analytics and strategy_product_consulting to 1 unless both are clearly core, hands-on responsibilities (this should be rare).
+              - When both analytics and engineering responsibilities are present, label ONLY the category that reflects the primary focus of the role. Do not set both data_analytics and software_engineering to 1 unless both are clearly core responsibilities.
+              - Across the domain categories (data_analytics, software_engineering, finance_accounting, marketing, strategy_product_consulting), output 1 for at most ONE category in typical cases. Only set more than one to 1 if the description clearly states that the role splits time between them as core responsibilities.
+              - Output 1 ONLY if a reasonable person would say this is primarily that type of job.
+              - Output 0 if the category is only weakly related, incidental, or not the main focus.
+              - If unsure or ambiguous, output 0.
+
+              EXAMPLES:
+              Title: Embedded Engineer | Description: ...5-7 years experience...provide guidance to junior engineers...
+              Output: {{"internship":0,"entry_level":0,"data_analytics":0,"software_engineering":1,"finance_accounting":0,"marketing":0}}
+
+              Title: C++ Software Developer | Description: ...0-1 year of practical experience...basic experience with Linux...familiarity with multithreading...Bachelor's or Master's degree...
+              Output: {{"internship":0,"entry_level":1,"data_analytics":0,"software_engineering":1,"finance_accounting":0,"marketing":0}}
+
+              Title: Junior Software Engineer — New Grad | Description: ...no prior experience required...entry level welcome...
+              Output: {{"internship":0,"entry_level":1,"data_analytics":0,"software_engineering":1,"finance_accounting":0,"marketing":0}}
+
+              Title: Senior Data Engineer | Description: Designs and maintains scalable data pipelines and batch/streaming ETL jobs in Python/Scala, owns the data platform and ML model serving infrastructure, collaborates with analysts and data scientists but does not primarily perform reporting or dashboard work.
+              Output: {{"internship":0,"entry_level":0,"data_analytics":0,"software_engineering":1,"finance_accounting":0,"marketing":0,"strategy_product_consulting":0}}
+
+              Title: Senior Strategy Manager | Description: Leads corporate and business unit strategy projects, evaluates market opportunities and competitive landscape, partners with finance and executives on long-term planning and M&A evaluations, uses data and analysis to inform strategic decisions but is not responsible for building data pipelines, dashboards, or running hands-on analyses day to day.
+              Output: {{"internship":0,"entry_level":0,"data_analytics":0,"software_engineering":0,"finance_accounting":0,"marketing":0,"strategy_product_consulting":1}}
+
+              Title: Product Manager | Description: Owns product roadmap and feature prioritization, gathers customer and stakeholder requirements, defines product strategy and success metrics, works with engineering and design to deliver features, reviews dashboards and experiments but does not build them hands-on.
+              Output: {{"internship":0,"entry_level":0,"data_analytics":0,"software_engineering":0,"finance_accounting":0,"marketing":0,"strategy_product_consulting":1}}
+
+              Now classify:
+              Title: {title}
+              Description: {description}
+
+              Output JSON only, no explanation:
+            temperature: 0.0
+            max_output_tokens: 128
+            categories:
+              internship: "Internship roles."
+              entry_level: "Roles explicitly targeting new graduates or candidates with 0-1 years of experience. Excludes any role that requires 2+ years of experience or involves supervising/mentoring junior staff."
+              data_analytics: "Hands-on data, analytics, BI, dashboarding, experimentation, or data science analysis roles."
+              software_engineering: "Software engineer, developer, or similar engineering roles, including data/ML/platform engineering that primarily builds systems and tooling."
+              finance_accounting: "Finance, accounting, treasury, FP&A, or investment analysis roles focused on financial modeling, budgeting, forecasting, or accounting."
+              marketing: "Marketing, growth, brand, campaign, performance marketing, or GTM execution roles."
+              strategy_product_consulting: "Generalist consulting, corporate/business strategy, business operations, corporate development/M&A strategy, and product management/product strategy roles (typical MBA-target roles)."
+
+  gemini-embedding-001:
+    description: "Gemini embedding model for generating vector representations of job postings."
+    tasks:
+      embeddings:
+        description: "Generate embeddings for job postings using selected columns."
+        column_combinations:
+          combination1: ['title']
+          combination2: ['title', 'description']
+          combination3: ['title', 'description', 'location']
+          combination4: ['location']
+          combination5: ['title', 'summary']  # decoder summary column
+        batch_processing:
+          batch_size: 60
+          rate_limit_delay: 61
+          output_dimensionality: 128

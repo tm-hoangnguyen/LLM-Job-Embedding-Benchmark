@@ -1,0 +1,308 @@
+job_posting_id,title,description,location
+49a3dde1-2b81-420b-aa95-edd2e80920f8,Project Engineer I,"Are you seeking purpose, challenge, and talented colleagues? With a diverse portfolio of residential, energy, commercial, light industrial and public programs, CESO has the opportunity for you to develop your career. We develop leaders and empower our associates to use their skills and talents to positively impact the world through service – to our coworkers, clients, and communities. We subscribe to the mission of “empowering our people to impact communities by bringing clients’ visions to life,” so if this speaks to you, let’s connect!
+
+At CESO, a Project Engineer I continues to gain practical and professional work experience in the engineering field and will function in a wide variety of tasks under the direction of a Professional Engineer. A Project Engineer I will work collaboratively with team members while utilizing engineering software and tools to create, modify, and analyze designs, to review and improve concepts; they will actively contribute to the preparation of technical reports, in troubleshooting technical issues, and stay up to date with the latest engineering trends and technologies.
+","Orlando, FL"
+354ac97a-67a4-471c-8882-aa19994cf4c9,Junior Manufacturing Quality Assurance Technician,"Job Title: Junior Manufacturing Quality Assurance Technician
+Location: Canonsburg PA 
+Job Type: Full-Time
+
+About the Role:
+We are seeking a detail-oriented Junior Manufacturing Quality Assurance Technician to join our team. In this role, you will assist in monitoring and maintaining quality standards in the manufacturing process, ensuring compliance with industry regulations and company specifications. This is an excellent opportunity for someone with a strong attention to detail and a passion for quality control in a manufacturing environment.
+
+Key Responsibilities:
+Perform inspections and tests on raw materials, in-process components, and finished products to ensure compliance with quality standards.
+Document and report any defects, non-conformances, or deviations from specifications.
+Assist in implementing and maintaining quality control procedures, including ISO and GMP standards (if applicable).
+Support root cause analysis and corrective/preventive actions to address quality issues.
+Work closely with production teams to ensure adherence to quality protocols.
+Maintain accurate and organized quality records and reports.
+Assist in conducting internal audits and inspections.
+Operate and calibrate testing equipment as needed.
+Participate in continuous improvement initiatives to enhance quality and efficiency.
+
+Qualifications & Skills:
+Associate degree or certification in Quality Assurance, Manufacturing, Engineering, or a related field (preferred but not required).
+0-2 years of experience in a quality assurance or manufacturing role (entry-level candidates encouraged to apply).
+Basic understanding of quality control processes and inspection techniques.
+Familiarity with measurement tools such as calipers, micrometers, and gauges (preferred).
+Strong problem-solving skills and attention to detail.
+Ability to read and interpret technical documents, drawings, and specifications.
+Proficiency in Microsoft Office (Excel, Word, Outlook).
+Excellent communication and teamwork skills.
+Ability to work in a fast-paced manufacturing environment.
+
+Preferred Qualifications:
+Knowledge of ISO 9001, GMP, or other quality management systems.
+Experience with statistical process control (SPC) or other quality metrics.
+","Canonsburg, PA"
+25d6b213-6e0a-4c9c-a873-2738f30d0b28,Architect I,"Filevine is forging the future of legal work with cloud-based workflow tools. We have a reputation for intuitive, streamlined technology that helps professionals manage their organization and serve their clients better. We’re also known for our team of extraordinary and passionate professionals who love working together to help organizations thrive. Our success has catapulted Filevine to the forefront of our field—we are ranked as one of the most innovative and fastest-growing technology companies in the country by both Deloitte and Inc.
+
+Our Mission
+Filevine is building the seamless intersection between legal and business by creating a world- class platform to help professionals scale.
+
+
+Role Summary:
+This architect will also take ownership of operability concerns, guiding teams to build systems with observability, proactive monitoring, and actionable alerting at their core. They will help define service-level objectives (SLOs), error budgets, and reliability standards across services, ensuring Filevine’s platform meets the demands of enterprise-scale customers. By partnering with engineering, security, and product teams, the SRE/Infra Architect will foster a culture of reliability and provide mentorship on performance optimization and incident prevention. In this way, the architect not only sets the direction for how we build, but also ensures our systems are designed to run smoothly in production at scale.
+",United States
+20a1595e-9bad-4319-96d5-0db8c3753e7c,Electrical Project Engineer I,"Are you seeking purpose, challenge, and talented colleagues? With a diverse portfolio of commercial, retail, hospitality, multi-family, and light industrial programs, CESO has the opportunity for you to develop your career. We develop leaders and empower our associates to use their skills and talents to positively impact the world through service – to our coworkers, clients, and communities. We subscribe to the mission of “finding purpose through serving others,” so if this speaks to you, let’s connect!
+
+At CESO, the Electrical Project Engineer I demonstrates the ability to perform a wide variety of technical assignments independently with little or no oversight for small, intermediate, or large projects and completes all necessary tasks on assigned projects so projects finish on time, within budget and consistent with industry production and care standards.  The Project Engineer I will continuously seek opportunities to learn and develop within the discipline with senior staff support.  
+","Overland Park, KS"
+64123916-5c13-46ca-a396-5da8cf0ed91f,Junior Software Engineer,"Delta Solutions & Strategies is seeking a motivated Junior Software Engineer to join our dynamic team. This position will be located at our Corporate Office in Colorado Springs, CO, and supports critical defense initiatives through the development of C# desktop applications in a virtualized environment.
+","Colorado Springs, CO"
+b874c4e0-5d02-4977-87d2-32df1959fb47,Software Engineer I,"At Agile Defense we know that action defines the outcome and new challenges require new solutions. That’s why we always look to the future and embrace change with an unmovable spirit and the courage to build for what comes next.
+
+Our vision is to bring adaptive innovation to support our nation's most important missions through the seamless integration of advanced technologies, elite minds, and unparalleled agility—leveraging a foundation of speed, flexibility, and ingenuity to strengthen and protect our nation’s vital interests.
+
+
+Job Req: 1144
+Title: Software Engineer I
+Clearance: Active DoD Secret clearance required or suitability for an interim Secret clearance based on a favorable background investigation.
+Location:  100% Remote ( Must be local to Scott AFB, St Louis)
+Salary range:  $70K - $115k           
+ 
+General:
+Global Decision Support System (GDSS) Application, Implementation, Modernization, and Support (AIMS):  GDSS is a mission-critical command and control platform that enables global air mobility operations. It provides real-time visibility into aircraft status, mission schedules, cargo loads, and crew readiness across worldwide locations. GDSS supports rapid decision-making by integrating logistics, operations, and intelligence data for enhanced situational awareness.
+
+We are looking for a Java/.Net Developer to work on a project that will sustain a command-and- control system for the Mobility Air Force. Your work will support the effectiveness of several communities of active-duty and civilian users. With the imminent migration to Amazon GovCloud, the program must continue to deliver stable, secure feature upgrades through new deployment methods. You will be working on a development team to not only provide updates to software as needed, but also support the team by providing direction to development efforts and growing less experienced team members. As a Developer, you will use your expertise to help deploy and maintain the projects codebase. You will also follow the Agile development methodology to create, test, troubleshoot, and maintain code.
+
+For test automation, you will use several tools, including ones like SmartBear’s Test Complete, Selenium, or the Cypress Test Automation framework to create tests that evaluate whether simulated user interactions succeed or fail to meet expectations. All tests you create should be able to run automatically by CI/CD pipelines in various environments. Test types should fit the environment, and guidelines provided on the proper tests to run (regression tests, integration tests, smoke tests, UAT, etc.). You will be responsible for evolving test automation to leverage the benefits of and tools available in the cloud environment.
+
+Software Engineer Description: Participates in the design, development, analysis, and implementation of software operating systems and software application programs; performs software operating systems and application engineering, including full life cycle design and development; works from specifications to develop and modify operating systems and software applications; participates in the design, coding, testing, debugging, and documentation of programs.
+
+A Level I category requires to have at least 3 years of minimum experience and is required to have at least a minimum education of high school or Associates Degree as well as technical experience and appropriate certifications. A Level I labor category is responsible for assisting higher levels (II & III).
+
+What you will do:
+·             Work under the direction of the Development lead to design, code, test, document, and install.
+·             Help analyze system requirements and prioritize tasking
+·             Review and refactor code
+·             Participate and sometimes lead design and planning discussions.
+·             Write Java/C# code that is clean, efficient, scalable, and dependable
+·             Implement, maintain, and improve upon formal coding processes and documentation.
+·             Ensure proper use of code analysis tools and assess automated security scans of code.
+·             Utilize automation to make processes more efficient and secure
+·             Support jr. developers’ work
+·             Support, improve, and optimize various CI/CD pipeline tools and processes
+What we like to see:
+·             Proficiency with AWS Cloud computing environments
+·             In-depth knowledge of Java and the ability to also code in .NET languages
+·             Ability to troubleshoot code at a senior level
+·             Able to work with minimal day-to-day direction
+·             Thrives when collaborating with a small team
+·             Knows when to ask for help when blocked, and knows when to help others when they are blocked
+
+What you should be familiar with:
+·             Linux, Python, or Bash Scripting
+·             Java and or C# Programming
+·             HTML, CSS, Javascript, JQuery, JSON, XML
+·             Cloud (AWS)
+·             Containerization and virtualization technologies like Docker
+·             Agile methodology
+·             Experience with SQL Scripts and Relational Database operations
+",Remote
+b683b5f2-94ea-4e76-9a1f-daaab225b8b6,Operations Mechanic (Maintenance Technician – Levels I–III),"Operations Mechanic (Maintenance Technician – Levels I–III)
+Location: Henrico, VA
+Job Type: Direct Hire
+Pay Rate: $27–$35/hour
+
+About the Company:
+
+A global manufacturer of cosmetics, pharmaceuticals, and personal care products—including well-known items like hair dye, hair spray, Tylenol, and chapstick. We’re seeking skilled Operations Mechanics (Levels I–III) to support and maintain our high-volume packaging and manufacturing lines in Henrico, VA.
+
+Schedule:
+
+Train on 1st Shift (7 AM – 3 PM) for the first 60 days
+Transition to 2nd Shift (3 PM – 11 PM) or 3rd Shift (11 PM – 7 AM)
+Must be flexible for off-shift or overtime work as needed
+","Henrico, VA"
+d31bc110-3142-491b-b2c3-b819f258635d,Maintenance Technician I,"Be yourself at Protolabs 
+Studies have shown that women and people of color are less likely to apply to jobs unless they meet every single qualification.  We are an equal opportunity employer, and we are committed to building a diverse team that feels they are valued in the workplace.  So do you feel you do not meet every single requirement but still intrigued? We encourage you to still apply!  You can help make our company even better.  We do not discriminate based on race, color, national origin, sexual orientation, gender, age, mental or physical ability, or any way you represent yourself.  We strongly believe diversity makes for more successful teams. 
+ 
+Why Protolabs? 
+We are the leaders in digital manufacturing.  We hire doers, makers, and creative thinkers who tackle our roles with an entrepreneurial spirit.  Our culture is centered around meaningful work that brings new and innovative products to market at unprecedented speeds.  We are a diverse team that comes from all walks of life and take pride in our team who is smart, genuine, humble, and passionate about what we do.  It’s our people who fuel our creativity and make our culture feel like home. 
+
+
+Join our team as a Maintenance Technician!
+
+The Maintenance Technician-I maintains, tests, and repairs production support equipment. Works with higher ranking technicians on required electrical, mechanical, hydraulic, and pneumatic related repairs. They will apply knowledge of electrical and mechanical principles as needed in determining equipment malfunctions and apply skills in restoring equipment to operation. Provide skilled mechanical and electrical support to all areas of CNC and Sheet Metal Manufacturing.
+
+We are looking for an Entry level maintenance technician to join our team to learn and grow their skills set.
+
+Shift: Weekend Night shift
+","Brooklyn Park, MN"
+f90929d0-77b1-4e0d-aac5-1116d920930e,New Grads 2026 - Data Scientist,"Established in 2017, WeRide (NASDAQ: WRD) is a leading global commercial-stage company that develops autonomous driving technologies from Level 2 to Level 4. WeRide is the only tech company in the world that holds driverless permits in China, the UAE, Singapore and the US, conducting autonomous driving R&D, tests and operations in over 30 cities of 10 countries around the world. WeRide has operated a self-driving fleet for more than 2,200 days.
+
+
+WeRide.ai Silicon Valley team is seeking a motivated Data Scientist to join our Metrics Team. This role focuses on supporting the development and validation of L3+ Advanced Driver Assistance Systems (ADAS) and L4 Autonomous Driving (AD) Systems through foundational data analysis. As a Data Scientist, you will contribute to ensuring the safety and reliability of our autonomous technologies by assisting with data processing, data analysis, and statistical evaluation.
+
+","San Jose, CA"
+65813bc1-693e-4052-88f3-2c504cb4a357,Junior Customer Solutions Engineer,"At Sysdig, we believe cloud security isn't a compromise - it's a promise. From the start, our mission has been clear: to help organizations secure innovation in the cloud, the right way.
+
+We created Falco, the open standard for cloud threat detection, and continue to lead the cloud security market with runtime insights, open innovation, and agentic Al. Creators of technology trusted by over 60% of the Fortune 500, Sysdig gives teams the real-time clarity to move fast and defend what matters most.
+
+Culture matters here. We believe diversity fuels stronger ideas, and open dialogue drives sharper decisions. Recognized as a Best Place to Work and one of Deloitte's fastest-growing companies for the past 5 years, we're here to raise the standard for what cloud security and workplace culture should be.
+
+If you have the passion to dig deeper, the desire to challenge convention, and the curiosity to build something better, Sysdig is the right place for you.
+",Nashville
+009eb511-c720-488e-b5dc-ecc7155fc196,Junior Copywriter,"The Thuma team is seeking a Junior Copywriter to join our Brand Creative team. You will be responsible for creating compelling and engaging content based on creative briefs for diverse channels and deliverables.
+
+Thuma’s Headquarters is based in the historic Presidio neighborhood of San Francisco and this role involves being onsite Tuesday through Thursday each week.
+
+In recognition of the personal and professional benefits that team members gain from time spent together in person, we organize a range of events throughout each year designed to bring our entire team together!
+","San Francisco, California"
+3d8671b3-6049-41cd-a936-7aec1b5cf597,Buyer I/II,"Tutor Intelligence builds advanced robotics systems that automate warehouse operations. As part of our fast-growing startup, you’ll directly contribute to scaling production and ensuring our customers receive reliable, high-quality robotic systems.
+
+We are seeking a Buyer I/II to support and grow our supply chain operations. This role is flexible to accommodate both early-career candidates (Buyer I) and mid-level professionals (Buyer II), with responsibilities scaled accordingly.
+The Buyer will focus on vendor management, Asia supplier coordination, purchase order execution, and close collaboration with Engineering and Manufacturing. Success in this role requires exceptional communication and negotiation skills, strong analytical ability (especially in Excel), and the ability to build relationships and trust with both external suppliers and internal teams.
+","Watertown, MA"
+f887d0f9-a5c9-4f8b-a4e5-c5657034b116,Administrative Support Specialist - Expert (1 FTE),"At Wyetech, you’ll be at the center of an award-winning corporate culture, breaking technological barriers and solving real-world problems for our federal government customers. We are committed to hiring the best of the best, and in return, we offer a world-class, truly unique employee experience that is rare within our industry.
+
+Please see information below.
+
+Due to federal contract requirements, United States Citizenship and position appropriate security clearance is required. (e.g. Active TS/SCI security clearance with agency appropriate polygraph).
+","Washington, DC"
+db4e6165-ba11-4168-a598-a938296adb65,Cyberspace Defensive Analyst I,"At Wyetech, you’ll be at the center of an award-winning corporate culture, breaking technological barriers and solving real-world problems for our federal government customers. We are committed to hiring the best of the best, and in return, we offer a world-class, truly unique employee experience that is rare within our industry.
+
+Provides technical expertise for the identification, development and prioritization of cyberspace operations requirements, processes, procedures, and governing directives. Assists in conducting cyberspace operations and defense of the DOD Information Network (DODIN). Provides situational awareness (SA) of cyber incidents, health, performance, availability, and reliability of the DODIN. Identifies issues and priorities affecting operations. Supports the creation, dissemination, and compliance of applicable orders and directives to the DOD community. Addresses areas of concern for the development of cyberspace capabilities for cyberspace operations. Prepares and modifies requirements to develop cyberspace capabilities based on the changing cyberspace environment for appropriate Government review, validation, and prioritization. Analyzes capability development requirements, concept of operation documents, and system architectures.
+
+Due to federal contract requirements, United States Citizenship and position appropriate security clearance is required. (e.g. Active TS/SCI security clearance with agency appropriate polygraph).
+","Ft. Meade, Maryland"
+0115f52e-e540-45c3-862d-d990e94096dd,Entry Level Software Engineer,"Delta Solutions & Strategies is seeking a motivated Junior Software Engineer to join our dynamic team. This position will be located at our Corporate Office in Colorado Springs, CO, and supports critical defense initiatives through the development of C# desktop applications in a virtualized environment.
+","Colorado Springs, CO"
+c7483dd1-bc80-44f5-a504-28e887dc2435,IT Specialist I,"At Wyetech, you’ll be at the center of an award-winning corporate culture, breaking technological barriers and solving real-world problems for our federal government customers. We are committed to hiring the best of the best, and in return, we offer a world-class, truly unique employee experience that is rare within our industry.
+
+Please see information below
+
+Due to federal contract requirements, United States Citizenship and position appropriate security clearance is required. (e.g. Active TS/SCI security clearance with agency appropriate polygraph).
+","Ft. Meade, Maryland"
+c1a565f5-81e6-4ebb-850e-b6012b44ad7b,"Software Engineer, New Grad - Defense","A World-Changing Company
+
+Palantir builds the world’s leading software for data-driven decisions and operations. By bringing the right data to the people who need it, our platforms empower our partners to develop lifesaving drugs, forecast supply chain disruptions, locate missing children, and more.
+
+
+The Role
+
+Software Engineers at Palantir build software at scale to transform how organizations around the world use data. In this role, you’ll have an opportunity to grow more quickly than you ever envisioned as you contribute high-quality code directly to Palantir Gotham: products that are deployed at some of the most important institutions across the government, defense and non-profit sectors. You'll create features used by research scientists, aerospace engineers, intelligence analysts, and economic forecasters in countries around the world. Palantir's Product Development organization is made up of small teams of Software Engineers, each focusing on a specific aspect of a product. For example, you might join a team that builds geospatial mapping tools for mission critical operations, or a component of the Gotham release infrastructure. We encourage communication and collaboration among teams to share context, skills, and experience, so you'll also have the opportunity to learn about other business areas.
+
+Core Responsibilities
+
+As a Software Engineer, you are involved throughout the product lifecycle - from idea generation, design, and prototyping, to execution and shipping, all while also being paired with a mentor dedicated to your growth and success. You'll collaborate closely with technical and non-technical counterparts to understand our customers' problems and build products that tackle them. One of the most effective ways to understand what our users need is to meet them. You may receive an opportunity to tour the assembly line at an auto-manufacturer or join a counter-terror analyst at their desk to really understand their mission and difficulties.
+
+SWE principles include: 
+
+• Ownership: We see projects through from beginning to end in spite of obstacles we may encounter.
+• Collaboration: We work internally with people from a variety of backgrounds — such as other Software Engineers, Product Managers, Designers and Product Reliability Engineers. We also partner with our business development teams (Forward Deployed Engineers, Deployment Strategists) in order to understand and solve our customers' problems.
+• Trust: We trust each other to effectively handle time and priorities, and don't micromanage. We want people to have the space to think for themselves, while feeling supported by their team.
+
+
+Technologies We Use
+
+It doesn’t matter what languages you know when you join us; what matters is that you can write clean, effective code and learn new languages quickly. Our software is constantly evolving, so we need engineers who can do the same. Alongside peers that bring diverse experience - whether you’re a former university Teaching Assistant, switched to computer science recently, or are a hackathon enthusiast — you'll build your skills to apply the best technology to solve a given problem. Right now, we use:
+
+• A variety of languages, including Java and Go for backend and Typescript for frontend
+• Open-source technologies like Cassandra, Spark, Elasticsearch, React, and Redux
+• Industry-standard build tooling, including Gradle and GitHub
+","New York, NY"
+e9cb1f77-d8ec-4cb2-9eb6-abb6337a8dfa,Network Engineer 1,"At Wyetech, you’ll be at the center of an award-winning corporate culture, breaking technological barriers and solving real-world problems for our federal government customers. We are committed to hiring the best of the best, and in return, we offer a world-class, truly unique employee experience that is rare within our industry.
+
+See information below
+
+Due to federal contract requirements, United States Citizenship and position appropriate security clearance is required. (e.g. Active TS/SCI security clearance with agency appropriate polygraph).
+","Columbia, Maryland"
+a092d5ec-3845-470e-aade-a428aecc2403,Industrial Sales Trainee - Entry Level Sales Development Program,"Ryan Herco Flow Solutions, a SunSource company, is a leading distributor of fluid control systems, fluid filtration systems, fluid handling products, micro-electronics, and general industrial supply. We sell to a broad base of customers in industries such as electronic component and equipment manufacturers, chemical manufacturers, water & waste treatment, metal finishing, pollution control and life sciences companies. www.rhfs.com
+
+Launch Your Career in Industrial Sales!
+Grow Our Own (GO2) – Industrial Sales Development Program
+
+What is GO2?
+GO2 is our 12-to-18-month development program designed for recent graduates interested in a career in industrial sales. You will receive comprehensive training, hands on experience, and dedicated mentorship, preparing you to transition into a full-time sales role in an assigned territory.
+","San Jose, CA 95131"
+db22d625-1e90-4c6b-babe-d32d607ed68f,"Instructor, Academic Upgrading (Biology 1)","Academic Services is focused on supporting SAIT’s schools and departments in their pursuit of SAIT’s strategic priorities.  Academic Services brings together several academic development, delivery, and quality assurance units with a common goal: student success.  Academic Services provides unique, flexible support programing designed to help learners succeed in their chosen SAIT career program.
+
+
+
+The Opportunity
+
+At the Southern Alberta Institute of Technology (SAIT), we are the shapers. The makers. The originals, driven by a passion for excellence and impact. We offer action-based learning, solution-focused research and enterprising collaborations with partners from around the world. We are a global leader in applied education, an Alberta Top Employer and a destination workplace for people empowered to make a difference in the lives of students. Now is an exciting time to join this one-of-a-kind place…SAIT.
+The Academic Services department is focused on supporting SAIT’s schools and departments in their pursuit of SAIT’s strategic priorities. Academic Services brings together several academic development, delivery, and quality assurance units with a common goal: student success. Academic Services provides unique and flexible support programming designed to help learners succeed in their chosen SAIT career program.
+
+We are seeking experienced and student-centered instructors with a strong record of teaching excellence and a collaborative approach to join our Academic Upgrading team. Reporting to the Academic Chair, the successful candidate will teach BIOL 181 (Biology I) during the Winter 2026 term.
+
+Course Description
+BIOL 181 – Biology I: Topics include the biosphere, diversity of life, cell structure and function, photosynthesis, cellular respiration, and selected topics in human anatomy. This course is equivalent to Alberta Education’s Biology 20.
+
+Daytime Section (In-Person): Monday/Tuesday 3:00–4:50 PM and Thursday 9:00–11:50 AM. Applicants must be available during this time period. 
+
+A complete application package will include a cover letter, a current Curriculum Vitae/resume, and a one-page statement of teaching interests and philosophy (including a list of courses taught). All application materials should be submitted as one PDF document. Applications that do not include the above will not be considered. 
+
+Note: SAIT, as a post-secondary institution, serves a diverse student population. Therefore, instructional duties may occasionally be required during early mornings, evenings, and weekends. If selected, specific scheduling arrangements will be discussed between you and the leader.
+","Calgary, AB"
+8cff4864-1064-42b5-8170-afb922d48a88,Electrical Project Designer I,"Are you seeking purpose, challenge, and talented colleagues? With a diverse portfolio of commercial, retail, hospitality, multi-family, and light industrial programs, CESO has the opportunity for you to develop your career. We develop leaders and empower our associates to use their skills and talents to positively impact the world through service – to our coworkers, clients, and communities. We subscribe to the mission of “finding purpose through serving others,” so if this speaks to you, let’s connect!
+
+At CESO, the Electrical Project Designer I demonstrates the ability to perform a wide variety of technical assignments independently with little or no oversight for small, intermediate, or large projects and completes all necessary tasks on assigned projects so projects ﬁnish on time, within budget and consistent with industry production and care standards.  The Project Designer I will continuously seek opportunities to learn and develop within the discipline with senior staff support.
+","Overland Park, KS"
+9d51fc86-7dab-44bf-a138-b6b4f5f9f1bc,Junior Structural Engineer,"About e.construct
+ 
+e.construct  is an engineering firm that specializes in providing elegant engineering solutions for complex challenges. e.construct is a fast-growing firm with 7 offices around the world. At our core, we question how the very nature of how to evolve the structures that we inhabit to increase their performance and value.  Our work is driven by exceptional engineers from diverse disciplines working collaboratively in a truly holistic design process which generates high-performing systems.
+
+e.construct designs structures such as bridges, high-rise design, commercial facilities design, precast concrete engineering, and post-tensioning design. We are a multi-disciplinary engineering design firm with specialized design and value engineering services.  The firm's core work is holistic at its approach, and it has divisions in structural, MEP, Geotechnical, and emerging construction technology such as 3D printing of concrete, technology, and 3D laser scanning.
+
+As a junior structural engineer, you will be working on specific engineering design and analysis tasks under the supervision of a structural engineer. The nature and progression of the assignments and the level of responsibilities will depend on your performance and willingness to grow. Good communication and interpersonal skills are expected. Ability to self-direct and to independently research technical solutions are encouraged. 
+
+","Raleigh, NC"
+c26670f1-6fcd-4f25-a0bc-f034748d1bac,"Designer I, Interior Design","Are you ready to join a growth-oriented team where creativity meets innovation? At Ware Malcomb, we are a dynamic and forward-thinking design firm committed to pushing the boundaries. Our team-oriented, collaborative approach ensures that every project is a blend of visionary design, seamless project delivery, and we are actively engaged with both the community and the industry. Discover our vibrant culture to get an inside look into life at Ware Malcomb and the programs we offer. https://waremalcomb.com/life-at-ware-malcomb/ 
+
+
+Designers are responsible for supporting and assisting in the development of space plans, concepts, creation of program documents, finish plans, specifications, and material selections for diverse interior design projects. 
+ 
+The Designer position at Ware Malcomb is a great entry level or junior Interior Designer position, providing an opportunity to gain exposure to diverse projects whilst working under the guidance of a Senior Interior Designer.
+","Phoenix, AZ"
+8f5d5dc5-9641-44f5-a2b9-38dd942207a2,Business Process Consultant- Expert (1 FTE),"At Wyetech, you’ll be at the center of an award-winning corporate culture, breaking technological barriers and solving real-world problems for our federal government customers. We are committed to hiring the best of the best, and in return, we offer a world-class, truly unique employee experience that is rare within our industry.
+
+Please see information below.
+
+Due to federal contract requirements, United States Citizenship and position appropriate security clearance is required. (e.g. Active TS/SCI security clearance with agency appropriate polygraph).
+","Washington, DC"
+bd0bdb1c-4aaa-4eed-8ca3-90faa1a39e81,Junior Consultant- Generalist,"Ready to embark on a journey of opportunity? Join a team of 750+ employees in 20+ countries in the first consultancy originating from CEE. We bring together digital and advisory as an international collaboratory where every talent can shine, every employee can become a partner, and every partner can become a shareholder. We are explorers at heart, powered by diversity, passionate for growth and united by integrity by our core organizational values. 
+
+Are you passionate about solving complex business challenges and driving impactful change? We are seeking a motivated Junior Consultant to join our advisory team, where you will have the opportunity to work across diverse sectors in private, public, and innovation streams.
+
+This position is open across all Civitta locations: Estonia, Latvia, Lithuania, Finland, Sweden, Denmark, Poland, Slovakia, Czechia, Ukraine, Hungary, Bulgaria, Romania, Moldova, Kosovo, Serbia, North Macedonia, Armenia, Georgia, Portugal, Uzbekistan.
+",All Civitta locations
+30396aa7-a758-4501-9911-45e843fc369f,Firewall Engineer - Junior Level (R-00081),"True Zero Technologies, a veteran-owned small business, was founded on the principle that the purposeful enablement of people and technology in an organization directly ties to the quality of its outcomes. True Zero recognizes that said outcomes begin and end with our people, and that is what we have built, a community of like-minded, driven, and passionate individuals and innovators who are aligned in a common goal of delivering top tier services to our customers. In 2023, True Zero was recognized as a “Best Places to Work” in two categories (""Prosperous and Thriving"" ($5MM – $50MM in gross revenue) and ""Mid-Atlantic Region"" (DC, DE, MD, NC, VA, WV)) and in 2022, was recognized as one of Inc. Magazine’s Top 5000 Fastest Growing Companies.
+
+Job Responsibilities:
+Maintain security policies and rules adhering to best practices, organizational requirements, and risk management frameworks.
+Managing/Document/Monitoring of network activity 
+Work closely with peers and other IT professionals to ensure a cohesive security posture 
+Focusing and adhering to the the policies and procedures that promote best practices and ensure a secure network 
+Rule implementation 
+Experience with ServiceNow
+Experience with Splunk 
+Understanding of the effective implementation requirements along with careful planning that includes a comprehensive needs analysis, a detailed project plan, and a thorough understanding of the organization's security policies
+Ensure the policy aligns with relevant cybersecurity and privacy requirements. 
+Maintain detailed records of firewall setups, changes, exceptions, and testing results. 
+Flow Troubleshooting 
+Conduct regular system upgrades, patches, enhancements, and performance monitoring to ensure the security and efficiency of firewall operations.
+Collaborate with the IT security team to devise and execute a comprehensive network security strategy.
+Document all configurations, modifications, and security policies related to the firewall infrastructure.
+Offer technical support and guidance to team members and other staff on network security concerns and firewall functionalities.
+Stay updated on the latest cybersecurity threats, trends, technologies, and automation practices to continually enhance firewall security and operational efficiency.
+Deploy, configure, and manage firewalls including Palo Alto, CISCO ASA, and Checkpoint to safeguard critical infrastructure and data.
+
+Qualifications:
+Bachelor’s degree in computer science, Information Technology, Cybersecurity, or a related field.
+2-3 years of hands-on experience in firewall administration, specifically with Palo Alto, CISCO ASA, and Checkpoint products.
+Thorough understanding of networking protocols (TCP/IP, HTTP/HTTPS, DNS, DHCP, VPN) and firewall technologies.
+Strong analytical and problem-solving skills with the ability to manage complex security systems.
+Excellent communication and collaboration skills, capable of working effectively in a team environment and with cross-functional teams.
+Proficient in documenting processes and procedures clearly and accurately.
+
+Preferred:
+Certification in Palo Alto (e.g., PCNSE), CISCO, Checkpoint, and/or CISSP.
+Qualified candidates in the Topeka KS area 
+Familiarity with scripting and automation tools (Python, Bash) for efficient firewall management, rule provisioning, and log analysis automation.
+Experience in implementing and managing advanced firewall features such as intrusion prevention systems (IPS) and application layer filtering.
+ 
+","Topeka, KS or Remote"
