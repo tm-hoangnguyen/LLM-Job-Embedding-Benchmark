@@ -1,4 +1,4 @@
-# Job LLM / Embeddings Benchmark
+# Job Posting Embeddings & Retrieval Benchmark
 
 ## Overview
 A standalone Python toolkit for job-posting embeddings, FAISS retrieval, ground-truth generation, and evaluation workflows.
